@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-	<title>El Búho Luigui</title>
+	<meta charset="UTF-8">
+	<title>Document</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/slideritem.css">
-
+	<link rel="stylesheet" href="css/v2.css">
 </head>
 <body>
   <header>
@@ -182,6 +182,7 @@
 		     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 		       <img src="img/flecha-izquierda-blanca.png" class="cursor" aria-hidden="true" width="15%">
 
+
 		     </a>
 		     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
 		       <img src="img/flecha-derecha-blanca.png" class="cursor" aria-hidden="true" width="15%">
@@ -191,10 +192,162 @@
 		<!--Slider item finish -->
   </section>
 
+	<div class="container-fluid wrapper_separte">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-center subtitle_section">¡Tu también sé parte!</h2>
+				</div>
+			</div>
 
 
+			<div class="row wrap_titles">
+				<div class="col-md-6 wrap_title_separte">
+
+					<h3 class="text-right subtitle_yellow">#SéParte</h3>
+
+					<p class="text-right text-intro">Ingresa tus datos y conoce de qué otras formas podrás formar parte de la educación de los niños que tanto queremos. ¿Que esperas?</p>
+
+				</div>
+				<div class="col-md-6 wrap_form">
+					<div class="box-form">
+
+						<div id="info"></div>
+
+						<form method="POST" id="registro_web" class="form_separte">
+
+							<div class="row group_input">
+
+								<div class="col-md-3 text-right">
+									<label>Nombres:</label>
+								</div>
+								<div class="col-md-9">
+									<input type="text" name="nombres" id="nombres" class="form-control" required>
+								</div>
+
+								</div>
+
+								<div class="row group_input">
+
+									<div class="col-md-3 text-right">
+										<label>Apellidos:</label>
+									</div>
+									<div class="col-md-9">
+										<input type="text" name="apellidos" id="apellidos" class="form-control" required>
+									</div>
+
+								</div>
+
+
+								<div class="row group_input">
+
+									<div class="col-md-3 text-right">
+										<label>E-mail:</label>
+									</div>
+									<div class="col-md-9">
+										<input type="email" name="email" id="email" class="form-control" required>
+									</div>
+
+								</div>
+
+
+								<div class="row group_input">
+
+									<div class="col-md-3 text-right">
+										<label>Soy un:</label>
+									</div>
+									<div class="col-md-9">
+										<select name="soy_un" id="soy_un" class="form-control">
+											<option hidden selected>Seleccione....</option>
+											<option value="PADRE">PADRE</option>
+											<option value="PROFESOR">PROFESOR</option>
+											<option value="OTRO">OTRO</option>
+										</select>
+									</div>
+
+								</div>
+
+
+								<div class="row group_input">
+
+									<div class="col-md-3 text-right">
+										<label>Escuela:</label>
+									</div>
+									<div class="col-md-9">
+										<input type="text" id="escuela" name="escuela" class="form-control">
+									</div>
+
+								</div>
+
+
+								<div class="row group_input">
+
+									<div class="col-md-3"></div>
+									<div class="col-md-9">
+										<button class="btn btn-default" type="submit" id="btn_submit">Quiero ser parte</button>
+										<button class="btn btn-default" id="btn_login">Ya soy parte</button>
+									</div>
+
+								</div>
+
+						</form>
+					</div>
+
+
+
+					</div>
+				</div>
+			</div>
+
+
+
+		</div><!--/.end-wrapper_separte-->
+
+
+
+
+		<div class="container-fluid wrapper_encuentranos">
+
+			<div class="container">
+
+				<div class="col-md-6 text-center">
+					<h2 class="subtitle_red">Encuéntranos</h2>
+
+					<div class="row">
+						<div class="col-md-12">
+							<form action="" class="form_search">
+								<div class="row content_form_google">
+									<div class="col-md-4 text-center">
+										<label>Departamento:</label>
+									</div>
+									<div class="col-md-8 form_search">
+										<select name="depa" id="depa" class="form-control"></select>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<p class="legend_text">Selecciona tu departamento y conoce todos los puntos de venta donde podrás encontrar nuestros productos</p>
+
+				</div>
+
+				<div class="col-md-6"></div>
+
+			</div>
+
+
+		</div>
+
+
+
+
+	</div>
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/validate.min.js"></script>
+	<script src="js/separte.js"></script>	
 </body>
 </html>
