@@ -16,11 +16,12 @@ var body=document.getElementsByTagName('body')[0];
 
 function moveScroll(event){
   var scroll=window.pageYOffset || document.body.scrollTop;
+  console.log(scroll);
   var boton1=document.getElementsByClassName('js-iconos')[0];
   var buho=document.getElementsByClassName('img-cambia')[0];
   var text=document.getElementsByClassName('textPrinc')[0];
   var text1=document.getElementsByClassName('text')[0];
-
+  var item=document.getElementsByClassName('nav-item');
   if(scroll>=10){
     boton1.style.display="block";
     buho.classList.add('flex1');
@@ -32,6 +33,35 @@ function moveScroll(event){
     },1000);
   }else{
     $('.msj').hide();
+  }
+
+  if(scroll>636){
+    $('.navbar').fadeIn('slow');
+    console.log(item[0]);
+    item[0].style.color="red";
+    item[1].style.color="black";
+  }else{
+    $('.navbar').fadeOut('slow');
+    item[0].style.color="black";
+    item[1].style.color="black";
+  }
+
+  if(scroll>=1348){
+    item[0].style.color="black";
+    // item[1].style.color="blue";
+    console.log(item[1]);
+  }else if(scroll<1348){
+    console.log(item[1]);
+    item[0].style.color="red";
+    item[1].style.color="black";
+  }
+
+  if(scroll>2036){
+    item[1].style.color="black";
+    item[2].style.color="yellow";
+  }else{
+    item[1].style.color="blue";
+    item[2].style.color="black";
   }
 }
 
@@ -69,6 +99,16 @@ function cerrar (event){
     modal.style.display="none";
     body.style.overflow="auto";
   }
+
+$('.js-iconos a').on("click", function(e) {
+   e.preventDefault();
+    // console.log("desplaza");
+    // console.log(e.target);
+    var target ='#'+ $(this).attr("role-link");
+    console.log(target);
+    $('html,body').animate({scrollTop: $(target).offset().top},1200);
+    return false;
+   });
 
 //llamada de eventos
 window.addEventListener('scroll',moveScroll);

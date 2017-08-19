@@ -12,7 +12,7 @@
 <body>
   <header>
     <div class="container-fluid">
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <nav class="navbar navbar-default navbar-fixed-top" id="nav" role="navigation">
        <div class="container">
          <div class="navbar-header">
            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -25,10 +25,10 @@
          </div>
          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
            <ul class="nav navbar-nav navbar-right">
-             <li class="active"><a href="#">Home</a></li>
-             <li><a href="#productos">productos</a></li>
-             <li><a href="#parte">Se parte</a></li>
-             <li><a href="#venta">Encuéntranos</a></li>
+             <li><a href="#">HOME</a></li>
+             <li ><a href="#productos" class="nav-item">PRODUCTOS</a></li>
+             <li ><a href="#se-parte" class="nav-item">SE PARTE</a></li>
+             <li ><a href="#pdv" class="nav-item">PUNTOS DE VENTA</a></li>
            </ul>
          </div>
        </div>
@@ -68,13 +68,13 @@
               </a>
             </div>
             <div class="col-xs-4 text-center">
-              <a href="" role-link="parte" class="anchor-portada">
+              <a href="" role-link="se-parte" class="anchor-portada">
                 <img src="assets/images/icono-productos.png" alt="sé parte" width="30%">
                 <h2 class="text-center">Sé parte</h2>
               </a>
             </div>
             <div class="col-xs-4 text-center">
-              <a href="" role-link="venta" class="anchor-portada">
+              <a href="" role-link="pdv" class="anchor-portada">
                 <img src="assets/images/icono-pdv.png" alt="puntos de venta" width="30%">
                 <h2 class="text-center">Puntos de venta</h2>
               </a>
@@ -93,7 +93,6 @@
   <section id="productos">
   <!--Slider item open -->
 	<div class="container-fluid back_slider">
-
   				<h2 class="text-center text-title">NUESTROS PRODUCTOS</h2>
 					<img class="img-responsive carousel-img" src="img/barra-divisora-blanca-horizontal.png" alt="" width="25%">
 					<br>
@@ -109,7 +108,7 @@
  						</div>
 						<div class="col-md-6 bord">
 
-							<h4 class="text-left">TANGRAMAS</h4>
+							<h3 class="text-left">TANGRAMAS</h3>
 						 <br>
 						 <div class="col-md-9">
 							<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quam ad deserunt,
@@ -119,7 +118,7 @@
 							<br>
 							<br>
 							<div class="col-md-9">
-							 <button class="btn-default boton-intro">QUIERO VER MÁS</button>
+							 <button class="boton-intro">QUIERO VER MÁS</button>
 							</div>
 
 						</div>
@@ -134,7 +133,7 @@
  						</div>
 						<div class="col-md-6 bord">
 
-							<h4 class="text-left">TANGRAMAS</h4>
+							<h3 class="text-left">TANGRAMAS</h3>
 						 <br>
 						 <div class="col-md-9">
 							<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quam ad deserunt,
@@ -144,12 +143,12 @@
 							<br>
 							<br>
 							<div class="col-md-9">
-							 <button class="btn-default boton-intro">QUIERO VER MÁS</button>
+							 <button class="boton-intro">QUIERO VER MÁS</button>
 							</div>
 
 						</div>
-						</div>
-		       </div>
+					</div>
+		     </div>
 
 
 		       <div class="item">
@@ -159,7 +158,7 @@
  						</div>
 						<div class="col-md-6 bord">
 
-							<h4 class="text-left">TANGRAMAS</h4>
+							<h3 class="text-left">TANGRAMAS</h3>
 						 <br>
 						 <div class="col-md-9">
 							<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quam ad deserunt,
@@ -169,12 +168,12 @@
 							<br>
 							<br>
 							<div class="col-md-9">
-							 <button class="btn-default boton-intro">QUIERO VER MÁS</button>
+							 <button class="boton-intro">QUIERO VER MÁS</button>
 							</div>
 
 						</div>
-						</div>
-		       </div>
+					</div>
+		    </div>
 
 		     <!-- Left and right controls -->
 		     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -190,122 +189,123 @@
 		<!--Slider item finish -->
   </section>
 
-	<div class="container-fluid wrapper_separte">
+  <section id="se-parte">
+    <div class="container-fluid wrapper_separte">
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2 class="text-center subtitle_section">¡Tu también sé parte!</h2>
-				</div>
-			</div>
-
-
-			<div class="row wrap_titles">
-				<div class="col-md-6 wrap_title_separte">
-
-					<h3 class="text-right subtitle_yellow">#SéParte</h3>
-
-					<p class="text-right text-intro">Ingresa tus datos y conoce de qué otras formas podrás formar parte de la educación de los niños que tanto queremos. ¿Que esperas?</p>
-
-				</div>
-				<div class="col-md-6 wrap_form">
-					<div class="box-form">
-
-						<div id="info"></div>
-
-						<form method="POST" id="registro_web" class="form_separte">
-
-							<div class="row group_input">
-
-								<div class="col-md-3 text-right">
-									<label>Nombres:</label>
-								</div>
-								<div class="col-md-9">
-									<input type="text" name="nombres" id="nombres" class="form-control" required>
-								</div>
-
-								</div>
-
-								<div class="row group_input">
-
-									<div class="col-md-3 text-right">
-										<label>Apellidos:</label>
-									</div>
-									<div class="col-md-9">
-										<input type="text" name="apellidos" id="apellidos" class="form-control" required>
-									</div>
-
-								</div>
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-md-12">
+  					<h2 class="text-center subtitle_section">¡Tu también sé parte!</h2>
+  				</div>
+  			</div>
 
 
-								<div class="row group_input">
+  			<div class="row wrap_titles">
+  				<div class="col-md-6 wrap_title_separte">
 
-									<div class="col-md-3 text-right">
-										<label>E-mail:</label>
-									</div>
-									<div class="col-md-9">
-										<input type="email" name="email" id="email" class="form-control" required>
-									</div>
+  					<h3 class="text-right subtitle_yellow">#SéParte</h3>
 
-								</div>
+  					<p class="text-right text-intro">Ingresa tus datos y conoce de qué otras formas podrás formar parte de la educación de los niños que tanto queremos. ¿Que esperas?</p>
 
+  				</div>
+  				<div class="col-md-6 wrap_form">
+  					<div class="box-form">
 
-								<div class="row group_input">
+  						<div id="info"></div>
 
-									<div class="col-md-3 text-right">
-										<label>Soy un:</label>
-									</div>
-									<div class="col-md-9">
-										<select name="soy_un" id="soy_un" class="form-control">
-											<option hidden selected>Seleccione....</option>
-											<option value="PADRE">PADRE</option>
-											<option value="PROFESOR">PROFESOR</option>
-											<option value="OTRO">OTRO</option>
-										</select>
-									</div>
+  						<form method="POST" id="registro_web" class="form_separte">
 
-								</div>
+  							<div class="row group_input">
 
+  								<div class="col-md-3 text-right">
+  									<label>Nombres:</label>
+  								</div>
+  								<div class="col-md-9">
+  									<input type="text" name="nombres" id="nombres" class="form-control" required>
+  								</div>
 
-								<div class="row group_input">
+  								</div>
 
-									<div class="col-md-3 text-right">
-										<label>Escuela:</label>
-									</div>
-									<div class="col-md-9">
-										<input type="text" id="escuela" name="escuela" class="form-control">
-									</div>
+  								<div class="row group_input">
 
-								</div>
+  									<div class="col-md-3 text-right">
+  										<label>Apellidos:</label>
+  									</div>
+  									<div class="col-md-9">
+  										<input type="text" name="apellidos" id="apellidos" class="form-control" required>
+  									</div>
+
+  								</div>
 
 
-								<div class="row group_input">
+  								<div class="row group_input">
 
-									<div class="col-md-3"></div>
-									<div class="col-md-9">
-										<button class="btn btn-default" type="submit" id="btn_submit">Quiero ser parte</button>
-										<button class="btn btn-default" id="btn_login">Ya soy parte</button>
-									</div>
+  									<div class="col-md-3 text-right">
+  										<label>E-mail:</label>
+  									</div>
+  									<div class="col-md-9">
+  										<input type="email" name="email" id="email" class="form-control" required>
+  									</div>
 
-								</div>
-
-						</form>
-					</div>
+  								</div>
 
 
+  								<div class="row group_input">
 
-					</div>
-				</div>
-			</div>
+  									<div class="col-md-3 text-right">
+  										<label>Soy un:</label>
+  									</div>
+  									<div class="col-md-9">
+  										<select name="soy_un" id="soy_un" class="form-control">
+  											<option hidden selected>Seleccione....</option>
+  											<option value="PADRE">PADRE</option>
+  											<option value="PROFESOR">PROFESOR</option>
+  											<option value="OTRO">OTRO</option>
+  										</select>
+  									</div>
+
+  								</div>
+
+
+  								<div class="row group_input">
+
+  									<div class="col-md-3 text-right">
+  										<label>Escuela:</label>
+  									</div>
+  									<div class="col-md-9">
+  										<input type="text" id="escuela" name="escuela" class="form-control">
+  									</div>
+
+  								</div>
+
+
+  								<div class="row group_input">
+
+  									<div class="col-md-3"></div>
+  									<div class="col-md-9">
+  										<button class="btn btn-default" type="submit" id="btn_submit">Quiero ser parte</button>
+  										<button class="btn btn-default" id="btn_login">Ya soy parte</button>
+  									</div>
+
+  								</div>
+
+  						</form>
+  					</div>
 
 
 
-		</div><!--/.end-wrapper_separte-->
+  					</div>
+  				</div>
+  			</div>
 
 
 
+  		</div><!--/.end-wrapper_separte-->
 
-		<div class="container-fluid wrapper_encuentranos">
+  </section>
+
+  <section id="pdv">
+    <div class="container-fluid wrapper_encuentranos">
 
 			<div class="container">
 
@@ -338,8 +338,7 @@
 
 		</div>
 
-
-
+  </section>
 
 
 		<footer>
@@ -360,6 +359,7 @@
 				</div>
 			</div>
 			<div class="container-fluid base2">
+        <br>
 			<div class="row">
 				<p class="text-center">El Búho Luigi es una marca de Inroplas S.A.C.</p>
 				<p class="text-center">Jirón Cuzco 343, Magdalena del Mar Lima Telf: 51 1 6166695</p>

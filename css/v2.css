@@ -24,7 +24,21 @@
 *{
 	padding:0px;
 	margin:0px;
+	font-family: 'GothamBold';
 }
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Moon Flower Bold';
+}
+
+h2{
+	font-size:75px;
+}
+
+h3{
+	font-size:70px;
+}
+
 .wrapper_separte{
 	background-image: url('../images/bg_blue.png');
 	background-repeat: repeat-x repeat-y;
@@ -124,7 +138,7 @@
 	font-family: 'GothamBookRegular';
 	border-radius: 0;
 	background-color: rgba(255,255,255,0.7);
-	box-shadow: none;	
+	box-shadow: none;
 }
 .legend_text{
 	padding: 50px 100px;

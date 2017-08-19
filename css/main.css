@@ -5,12 +5,16 @@
 
 }
 
+#nav{
+  height:10vh;
+}
+
 .navbar-header{
   width:50%;
 }
 
 .navbar-brand>img{
-  width: 7%;
+  width: 9%;
   display: inline-block;
 }
 

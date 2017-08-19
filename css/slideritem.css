@@ -9,9 +9,9 @@
 	left: 0;
 	position: absolute;*/
 	background-position: 1.4s ease-in-out 0.3s;
-	background-image:url(../img/patrón-rojo.png);
+	background-image:url(../img/patron-rojo.png);
   background-repeat:repeat;
-	z-index: 0;
+	/*z-index: 0;*/
 }
 
 .carousel-img{
@@ -94,7 +94,7 @@
 	padding:2px 20px 2px 20px;
 	border:none;
 	font-family: 'Moon Flower Bold';
-	font-size: 14px;
+	font-size: 26px;
 	border:2px solid #10069F;
 }
 .boton-intro:hover{
@@ -109,9 +109,9 @@
 }
 
 .base1{
-	background-image: url(../img/patron-byn.png);
+	background-image: url(../img/patron-naranja.png);
 	background-repeat: repeat;
-	height: 200px;
+	height: 260px;
 	color: white;
 }
 .base1:after {
@@ -120,7 +120,7 @@
 
 .base2{
 	background-color: rgb(49, 38, 29);
-	height: 70px;
+	height: auto;
 	color: white;
 
 }
