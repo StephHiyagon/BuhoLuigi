@@ -1,0 +1,19 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+
+}
+
+.navbar-header{
+  width:50%;
+}
+
+.navbar-brand>img{
+  width: 7%;
+  display: inline-block;
+}
+
+.brand-img{
+  width:20%;
+}
