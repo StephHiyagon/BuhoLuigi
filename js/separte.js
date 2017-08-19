@@ -64,6 +64,10 @@ $('document').ready(function(){
 
 						$("#info").html('<div class="alert alert-info alert-dismissible fade in" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Cerrar"><span aria-hidden="true">×</span></button><p>' + data + '</p></div>');
 						$("#btn_submit").html('Quiero ser parte');
+						$("#nombres").va('');
+						$("#apellidos").val('');
+						$("#email").val('');
+						$("#escuela").val('');
 
 					});
 				}
