@@ -18,10 +18,33 @@
   width:20%;
 }
 
+.anchor-portada{
+  text-decoration: none;
+  color:#fff;
+}
+
+.anchor-portada:hover, .anchor-portada:link{
+  text-decoration: none;
+}
+
+.abs{
+  cursor:pointer;
+}
+
+.msj{
+  width:90%;
+}
+
+.textPrinc{
+  display:none;
+}
+
 .flex{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  width:50%;
+  display:block;
+  margin: auto;
+  margin-bottom: 50px;
+  transition: all 1s ease-in-out;
 }
 
 .img-cambia {
@@ -37,55 +60,22 @@
   transition: opacity 1s ease-in-out;
 }
 
+.flex1{
+  width:210px;
+  height: 210px;
+  margin-bottom: 0;
+  margin-top: 90px;
+  transition: all 1s ease-in-out;
+}
+
 .img-cambia img.top:hover {
   opacity: 0;
 }
 
 .nubes{
-  /*position: relative;
-  top: 5rem;
-  left: -23rem;*/
-
-}
-
-
-/*.abs{
   position: relative;
-  top: 1rem;
-}*/
-
-div.nube1{
-  background-image: url(../assets/images/nube-chica.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width:100%;
-  height:7vh;
-  position: relative;
-  top: 4rem;
-  left: -11rem;
-}
-
-div.nube1>p{
-  position:absolute;
-  top:15px;
-  left:50px;
-}
-
-div.nube2{
-  background-image: url(../assets/images/nube-chica.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width:100%;
-  height:7.2vh;
-  position: relative;
-  top: 8rem;
-  left: -11rem;
-}
-
-div.nube2>p{
-  position:absolute;
-  top:15px;
-  left:50px;
+  top: 7rem;
+  left: -30rem;
 }
 
 /*video*/
@@ -106,10 +96,6 @@ div.nube2>p{
   z-index:4;
   height: 100vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 header::after{
@@ -120,4 +106,70 @@ header::after{
   width:100%;
   height:100vh;
   background:rgba(255, 96, 55, 0.875);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color:rgba(255, 96, 55, 0.875); /* Black w/ opacity */
+}
+
+/* Contenido del modal */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height:100vh;
+  border:12px solid white;
+  z-index: 100;
+}
+
+
+/* Add Animation */
+.modal-content {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* boton cerrar el modal */
+#close {
+  position: absolute;
+  top: 20px;
+  right: 150px;
+  color:#fff;
+  font-size: 53px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index:110;
+}
+
+#close:hover {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% imagen en la pantalla */
+@media only screen and (max-width: 700px){
+  .modal-content {
+      width: 100%;
+    }
 }

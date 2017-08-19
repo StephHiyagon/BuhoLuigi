@@ -40,44 +40,51 @@
       <div class="container-fluid luigi">
         <div class="row">
           <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
-            <div class="text-center flex">
+            <div class="text-center">
                 <div class="img-cambia">
-                  <img src="assets/images/boton-play.png" alt="El Búho Lugui" width="90%">
+                  <img class="play" src="assets/images/boton-play.png" alt="El Búho Lugui" width="90%">
                   <img class="top" src="assets/images/buho-principal.png" alt="El Búho Lugui" width="90%">
                 </div>
-                <img src="assets/images/Yo-soy-el-buho-luigi.png" alt="Buho Luigi"/>
+                <img src="assets/images/Yo-soy-el-buho-luigi.png" alt="Buho Luigi" class="text"/>
+                <img src="assets/images/el-buho-luigi.png" alt="" class="textPrinc">
             </div>
          </div>
          <div class="col-sm-3">
-           <!-- <div class="nubes"> -->
-             <!-- <img src="assets/images/nube-chica.png" alt="" width="240%" class="coo"> -->
-             <div class="nube1"><p>!Coo Coo!</p></div>
-             <!-- <img src="assets/images/nube-chica.png" alt="" width="270%" class="abs"> -->
-             <div class="nube2"><a href="#">!Conóceme!</a></div>
-           <!-- </div> -->
+           <div class="nubes">
+             <img src="assets/images/nube-chica-1.png" alt="" width="50%" class="coo">
+             <img src="assets/images/nube-chica-2.png" alt="" width="50%" class="abs">
+             <img src="assets/images/nube-grande.png" alt="" class="msj">
+           </div>
          </div>
         </div>
-        <div class="row">
+        <div class="row js-iconos">
           <div class="col-xs-4 text-center">
-              <a href="" role-link="productos" class="anchor-portada n1">
-                <img src="assets/images/Botón1.png" alt="productos">
+              <a href="" role-link="productos" class="anchor-portada">
+                <img src="assets/images/icono-pdv.png" alt="productos" width="30%">
                 <h2 class="text-center">Productos</h2>
               </a>
             </div>
             <div class="col-xs-4 text-center">
-              <a href="" role-link="parte" class="anchor-portada n2">
-                <img src="assets/images/Botón2.png" alt="sé parte">
+              <a href="" role-link="parte" class="anchor-portada">
+                <img src="assets/images/icono-productos.png" alt="sé parte" width="30%">
                 <h2 class="text-center">Sé parte</h2>
               </a>
             </div>
             <div class="col-xs-4 text-center">
-              <a href="" role-link="venta" class="anchor-portada n3">
-                <img src="assets/images/Botón3.png" alt="puntos de venta">
+              <a href="" role-link="venta" class="anchor-portada">
+                <img src="assets/images/icono-pdv.png" alt="puntos de venta" width="30%">
                 <h2 class="text-center">Puntos de venta</h2>
               </a>
             </div>
         </div>
       </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span id="close">&times;</span>
+        <div class="modal-content">
+          <!-- <iframe id="video" src="https://www.youtube.com/embed/gJ2hK5LpQ9I?enablejsapi=1&html5=1&rel=0&controls=0&showinfo=0&autoplay=1&loop=1" frameborder="0"></iframe> -->
+          <video id="video" preload="none" style="width:100%;max-width:95vw" controls=""><source src="assets/videos/Owl.mp4" type="video/mp4"></video>
+        </div>
     </div>
   </header>
   <section id="productos">
