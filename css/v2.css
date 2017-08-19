@@ -32,7 +32,7 @@
 .wrapper_separte{
 	background-image: url('../images/bg_blue.png');
 	background-repeat: repeat-x repeat-y;
-	height: 100vh;
+	height: auto;
 	padding: 70px;
 	color: #fff;
 }
@@ -103,4 +103,29 @@
 	background-color: transparent;
 	color: #10069F;
 	border:2px solid #FFD100;
+}
+.wrapper_encuentranos{
+	background-image: url('../images/bg_yellow.png');
+	background-repeat: repeat-x repeat-y;
+	height: auto;
+	padding: 100px 70px 100px 70px;
+	color: #fff;
+}
+.subtitle_red{
+	font-size: 75px;
+	color: #ff6037;
+	font-family: 'Moon Flower Bold';
+}
+.content_form_google{
+	margin-top: 50px;
+}
+.form_search label{
+	font-size: 20px;
+	font-family: 'GothamBookRegular';
+}
+.legend_text{
+	padding: 50px 100px;
+	font-size: 16px;
+	font-family: 'GothamBookRegular';
+	color: #10069F;
 }
