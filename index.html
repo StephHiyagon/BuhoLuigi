@@ -31,7 +31,7 @@
        </div>
      </nav>
     </div>
-    <!-- <div class="video-bg">
+    <div class="video-bg">
       <div class="video-fg">
         <iframe id="video" src="https://www.youtube.com/embed/gJ2hK5LpQ9I?enablejsapi=1&html5=1&rel=0&controls=1" frameborder="0" volume="0"></iframe>
       </div>
@@ -40,23 +40,80 @@
       <div class="container-fluid luigi">
         <div class="row">
           <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
-            <div class="text-center relative">
-              <div class="msj absolute hidden-xs hidden-sm">
-                <img class="picb" src="assets/images/buho-principal.png" alt="El Búho Lugui">
-                <!-- <div class="">Cooool!</div> -->
-              <!-- </div>
-              <img class="pic1" src="" alt="Buho Luigi"/>
-            </div> -->
-            <!-- <h1 class="text-center">Yo soy el Buho Luigi</h1> -->
-          <!-- </div>
+            <div class="text-center flex">
+                <div class="img-cambia">
+                  <img src="assets/images/boton-play.png" alt="El Búho Lugui" width="90%">
+                  <img class="top" src="assets/images/buho-principal.png" alt="El Búho Lugui" width="90%">
+                </div>
+                <img src="assets/images/Yo-soy-el-buho-luigi.png" alt="Buho Luigi"/>
+            </div>
+         </div>
+         <div class="col-sm-3">
+           <!-- <div class="nubes"> -->
+             <!-- <img src="assets/images/nube-chica.png" alt="" width="240%" class="coo"> -->
+             <div class="nube1"><p>!Coo Coo!</p></div>
+             <!-- <img src="assets/images/nube-chica.png" alt="" width="270%" class="abs"> -->
+             <div class="nube2"><a href="#">!Conóceme!</a></div>
+           <!-- </div> -->
+         </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 text-center">
+              <a href="" role-link="productos" class="anchor-portada n1">
+                <img src="assets/images/Botón1.png" alt="productos">
+                <h2 class="text-center">Productos</h2>
+              </a>
+            </div>
+            <div class="col-xs-4 text-center">
+              <a href="" role-link="parte" class="anchor-portada n2">
+                <img src="assets/images/Botón2.png" alt="sé parte">
+                <h2 class="text-center">Sé parte</h2>
+              </a>
+            </div>
+            <div class="col-xs-4 text-center">
+              <a href="" role-link="venta" class="anchor-portada n3">
+                <img src="assets/images/Botón3.png" alt="puntos de venta">
+                <h2 class="text-center">Puntos de venta</h2>
+              </a>
+            </div>
         </div>
       </div>
-    </div>  -->
+    </div>
   </header>
+  <section id="productos">
+    <h2>productos</h2>
+    <div class="container-fluid productback">
+              <div class="row">
+                <div class="boton holder hidden-xs hidden-sm">
+                  <a href="#" class="animBtn animBtn2 themeB" role-link="scroll-animate">Home</a>
+                </div>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+
+                    <div class="row item active">
+                      <div class="col-xs-6">
+                        <img src="" alt="Los Angeles" style="width:100%;">
+                      </div>
+                      <div class="col-xs-6 flex">
+                        <h2>Los Angeles</h2>
+                        <h5>Neque porro quisquam est qui dolorem ipsum<br>quia dolor sit amet, consectetur,<br>adipisci velit...</h5>
+                        <br>
+                        <button class="bmore"></button>
+                      </div>
+                    </div>
+
+  </section>
 
 
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
