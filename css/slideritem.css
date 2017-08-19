@@ -14,5 +14,17 @@
 	background-color: rgb(49, 38, 29);
 	height: 70px;
 	color: white;
-	
+
+}
+.products{
+	margin-left: 50%;
+}
+.pcard{
+	background-color: white;
+	border: 5px solid blue;
+	border-radius: 10px;
+	width: 250px;
+	height: 200px;
+	margin: 20px;
+	overflow: hidden;
 }
