@@ -123,6 +123,12 @@
 	font-size: 20px;
 	font-family: 'GothamBookRegular';
 }
+.form_search select{
+	font-family: 'GothamBookRegular';
+	border-radius: 0;
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: none;	
+}
 .legend_text{
 	padding: 50px 100px;
 	font-size: 16px;
