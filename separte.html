@@ -4,17 +4,61 @@
   <meta charset="UTF-8">
 	<title>El Búho Luigui</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/form.css">
 </head>
 <body>
 
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				
+			</div>
+			<div class="col-md-6 wrapper_form">
 
-	<form action="separte.php">
-		
-	</form>
+				<div id="info"></div>
+
+				<form method="POST" id="registro_web" class="form_separte">
+					<div class="form-group">
+						<label>Nombres: </label>
+						<input type="text" name="nombres" id="nombres" class="form-control" required>
+					</div>
+
+					<div class="form-group">
+						<label>Apellidos: </label>
+						<input type="text" name="apellidos" id="apellidos" class="form-control" required>
+					</div>
+
+					<div class="form-group">
+						<label>E-mail: </label>
+						<input type="email" name="email" id="email" class="form-control" required>
+					</div>
+
+					<div class="form-group">
+						<label>Soy un: </label>
+						<select name="soy_un" id="soy_un" class="form-control">
+							<option hidden selected>Seleccione....</option>
+							<option value="PADRE">PADRE</option>
+							<option value="PROFESOR">PROFESOR</option>
+							<option value="OTRO">OTRO</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label>Escuela</label>
+						<input type="text" id="escuela" name="escuela" class="form-control">
+					</div>
+
+					<button class="btn btn-default" type="submit" id="btn_submit">Quiero ser parte</button>
+					<button class="btn btn-default" id="btn_login">Ya soy parte</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
 	
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/validate.min.js"></script>
+	<script src="js/separte.js"></script>
 </body>
 </html>
