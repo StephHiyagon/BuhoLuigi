@@ -56,6 +56,7 @@
 	font-family: 'Moon Flower Bold';
 	font-weight: bold;
 	padding:20px 0px;
+	margin-right: 34px;
 }
 .text-intro{
 	font-family: 'GothamBookRegular';
@@ -109,7 +110,7 @@
 }
 .subtitle_red{
 	font-size: 75px;
-	color: #ff6037;
+	color: #EE2737;
 	font-family: 'Moon Flower Bold';
 }
 .content_form_google{
