@@ -126,7 +126,7 @@
 .form_search select{
 	font-family: 'GothamBookRegular';
 	border-radius: 0;
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0.7);
 	box-shadow: none;	
 }
 .legend_text{
