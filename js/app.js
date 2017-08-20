@@ -12,17 +12,14 @@ var span = document.getElementById("close");
 var modal = document.getElementById('myModal');
 var body=document.getElementsByTagName('body')[0];
 
+var boton1=document.getElementsByClassName('js-iconos')[0];
+var buho=document.getElementsByClassName('img-cambia')[0];
+var text=document.getElementsByClassName('textPrinc')[0];
+var text1=document.getElementsByClassName('text')[0];
+var item=document.getElementsByClassName('nav-item');
 //funciones
-
-function moveScroll(event){
-  var scroll=window.pageYOffset || document.body.scrollTop;
-  console.log(scroll);
-  var boton1=document.getElementsByClassName('js-iconos')[0];
-  var buho=document.getElementsByClassName('img-cambia')[0];
-  var text=document.getElementsByClassName('textPrinc')[0];
-  var text1=document.getElementsByClassName('text')[0];
-  var item=document.getElementsByClassName('nav-item');
-  if(scroll>=10){
+function portada(){
+  setTimeout(function(){
     boton1.style.display="block";
     buho.classList.add('flex1');
     text.classList.add('flex');
@@ -30,39 +27,51 @@ function moveScroll(event){
     $('.coo').fadeIn('slow');
     setTimeout(function(){
       $('.abs').fadeIn('slow');
-    },1000);
-  }else{
+    },1500);
+  }, 2000);
+}
+
+portada();
+
+
+function moveScroll(event){
+  var scroll=window.pageYOffset || document.body.scrollTop;
+  console.log(scroll);
+
+  if(scroll<1){
     $('.msj').hide();
+    $('.coo').hide();
+    $('.abs').hide();
+    boton1.style.display="none";
+    buho.classList.remove('flex1');
+    text.classList.remove('flex');
+    text1.style.display="inline-block";
+    portada();
   }
 
-  if(scroll>636){
+  if(scroll>=636){
     $('.navbar').fadeIn('slow');
     console.log(item[0]);
     item[0].style.color="red";
-    item[1].style.color="black";
-  }else{
-    $('.navbar').fadeOut('slow');
-    item[0].style.color="black";
-    item[1].style.color="black";
+    item[1].style.color="gray";
+    item[2].style.color="gray";
   }
 
   if(scroll>=1348){
-    item[0].style.color="black";
-    // item[1].style.color="blue";
+    item[0].style.color="gray";
+    item[1].style.color="blue";
     console.log(item[1]);
-  }else if(scroll<1348){
-    console.log(item[1]);
-    item[0].style.color="red";
-    item[1].style.color="black";
   }
 
-  if(scroll>2036){
-    item[1].style.color="black";
+  if(scroll>=2036){
+    item[1].style.color="gray";
     item[2].style.color="yellow";
-  }else{
-    item[1].style.color="blue";
-    item[2].style.color="black";
   }
+
+  if(scroll<636){
+    $('.navbar').fadeOut('slow');
+  }
+
 }
 
 $('.abs').on('click', function(){
@@ -102,12 +111,17 @@ function cerrar (event){
 
 $('.js-iconos a').on("click", function(e) {
    e.preventDefault();
-    // console.log("desplaza");
-    // console.log(e.target);
     var target ='#'+ $(this).attr("role-link");
-    console.log(target);
     $('html,body').animate({scrollTop: $(target).offset().top},1200);
     return false;
+   });
+
+ $('header li').on("click", function(e) {
+   e.preventDefault();
+    var target ='#'+ $(e.target).attr("role-data");
+    $('html,body').animate({scrollTop: $(target).offset().top}, 1200);
+    return false;
+
    });
 
 //llamada de eventos

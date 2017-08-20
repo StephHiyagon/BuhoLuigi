@@ -6,7 +6,7 @@
 }
 
 #nav{
-  height:10vh;
+  height:7vh;
 }
 
 .navbar-header{
@@ -14,8 +14,10 @@
 }
 
 .navbar-brand>img{
-  width: 9%;
+  width: 40%;
   display: inline-block;
+  position: relative;
+  top: -11px;
 }
 
 .brand-img{
@@ -53,8 +55,8 @@
 
 .img-cambia {
   position: relative;
-  height: 290px;
-  width: 290px;
+  height: 380px;
+  width: 380px;
   margin: 50px auto;
 }
 
@@ -79,8 +81,21 @@
 .nubes{
   position: relative;
   top: 7rem;
-  left: -30rem;
+  left: -28rem;
 }
+
+.coo{
+  position: relative;
+  left: -2rem;
+}
+
+#map{
+  height: 55vh;
+}
+
+/*.mapa{
+  margin-right: 0;
+}*/
 
 /*video*/
 

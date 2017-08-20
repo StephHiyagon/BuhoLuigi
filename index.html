@@ -22,14 +22,14 @@
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
            </button>
-           <a class="navbar-brand" href="#home"><img src="assets/images/buho-principal.png" alt="El Búho Luigi"><img src="assets/images/el-buho-luigi.png" alt="El búho Luigi" class="brand-img"></a>
+           <a class="navbar-brand" href="#home"><img src="assets/images/logo-para-header.png" alt="El Búho Luigi"></a>
          </div>
          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
            <ul class="nav navbar-nav navbar-right">
-             <li><a href="#">HOME</a></li>
-             <li ><a href="#productos" class="nav-item">PRODUCTOS</a></li>
-             <li ><a href="#se-parte" class="nav-item">SE PARTE</a></li>
-             <li ><a href="#pdv" class="nav-item">PUNTOS DE VENTA</a></li>
+             <li><a href="" role-data="home">HOME</a></li>
+             <li ><a href="" role-data="productos" class="nav-item">PRODUCTOS</a></li>
+             <li ><a href="" role-data="se-parte" class="nav-item">SE PARTE</a></li>
+             <li ><a href="" role-data="pdv" class="nav-item">PUNTOS DE VENTA</a></li>
            </ul>
          </div>
        </div>
@@ -40,16 +40,16 @@
         <iframe id="video" src="https://www.youtube.com/embed/gJ2hK5LpQ9I?enablejsapi=1&html5=1&rel=0&controls=1" frameborder="0" volume="0"></iframe>
       </div>
    </div>
-   <div class="video-overlay">
+   <div class="video-overlay" id="home">
       <div class="container-fluid luigi">
         <div class="row">
           <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
             <div class="text-center">
                 <div class="img-cambia">
-                  <img class="play" src="assets/images/boton-play.png" alt="El Búho Lugui" width="90%">
-                  <img class="top" src="assets/images/buho-principal.png" alt="El Búho Lugui" width="90%">
+                  <img class="play" src="assets/images/boton-play.png" alt="El Búho Lugui" width="100%">
+                  <img class="top" src="assets/images/buho-principal.png" alt="El Búho Lugui" width="100%">
                 </div>
-                <img src="assets/images/Yo-soy-el-buho-luigi.png" alt="Buho Luigi" class="text"/>
+                <img src="assets/images/Yo-soy-el-buho-luigi.png" alt="Buho Luigi" class="text" width="60%"/>
                 <img src="assets/images/el-buho-luigi.png" alt="" class="textPrinc">
             </div>
          </div>
@@ -64,13 +64,17 @@
         <div class="row js-iconos">
           <div class="col-xs-4 text-center">
               <a href="" role-link="productos" class="anchor-portada">
-                <img src="assets/images/icono-pdv.png" alt="productos" width="30%">
+
+                <img src="assets/images/icono-productos.png" alt="productos" width="30%">
+
                 <h4 class="text-center">Productos</h4>
               </a>
             </div>
             <div class="col-xs-4 text-center">
               <a href="" role-link="se-parte" class="anchor-portada">
-                <img src="assets/images/icono-productos.png" alt="sé parte" width="30%">
+
+                <img src="assets/images/icono-separte.png" alt="sé parte" width="30%">
+
                 <h4 class="text-center">Sé parte</h4>
               </a>
             </div>
@@ -95,7 +99,7 @@
   <!--Slider item open -->
 	<div class="container-fluid back_slider">
   				<h2 class="text-center text-title ">NUESTROS PRODUCTOS</h2>
-					<img class="img-responsive carousel-img" src="img/barra-divisora-blanca-horizontal.png" alt="" width="13%">
+					<img class="img-responsive barbar" src="img/barra-divisora-blanca-horizontal.png" alt="" width="13%">
 					
 		     <!-- Wrapper for slides -->
 		     <div class="carousel-inner" role="listbox">
@@ -195,7 +199,9 @@
   			<div class="row">
   				<div class="col-md-12">
   					<h2 class="text-center subtitle_section">¡Tu también sé parte!</h2>
-						<img class="img-responsive carousel-img" src="img/barra-divisora-blanca-horizontal.png" alt="" width="15%">
+
+						<img class="img-responsive barbar" src="img/barra-divisora-blanca-horizontal.png" alt="" width="15%">
+
   				</div>
   			</div>
 
@@ -311,7 +317,8 @@
 
 				<div class="col-md-6 text-center">
 					<h2 class="subtitle_red">Encuéntranos</h2>
-					<img class="img-responsive carousel-img" src="img/barra-divisora-blanca-horizontal.png" alt="" width="15%">
+
+					<img class="img-responsive barbar" src="img/barra-divisora-naranja-horizontal.png" alt="" width="30%">
 
 					<div class="row">
 						<div class="col-md-12">
@@ -321,7 +328,11 @@
 										<label>Departamento:</label>
 									</div>
 									<div class="col-md-8 form_search">
-										<select name="depa" id="depa" class="form-control"></select>
+										<select name="depa" id="depa" class="form-control">
+											<option value="" hidden>Seleciona una opción</option>
+											<option value="lima">Lima</option>
+  										<option value="trujillo">Trujillo</option>
+										</select>
 									</div>
 								</div>
 							</form>
@@ -332,7 +343,9 @@
 
 				</div>
 
-				<div class="col-md-6"></div>
+				<div class="col-md-6 mapa">
+					<div id="map"></div>
+				</div>
 
 			</div>
 
@@ -346,7 +359,7 @@
 			<div class="container-fluid base1">
 				<div class="row col-center">
 					<h4 class="text-center">¡SIGUE AL BÚHO!</h4>
-					<img class="img-responsive carousel-img" src="img/barra-divisora-blanca-horizontal.png" alt="" width="7%">
+					<img class="img-responsive barbar" src="img/barra-divisora-blanca-horizontal.png" alt="" width="7%">
 					<br>
 					<br>
 					<div class="col-md-9 col-center">
@@ -379,6 +392,8 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/app.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2O0FTclPKjtSDYfiNkWPInx7mppOZmgs"></script>
+	<script src="js/map.js" charset="utf-8"></script>
 	<script src="js/validate.min.js"></script>
 	<script src="js/separte.js"></script>
 </body>
