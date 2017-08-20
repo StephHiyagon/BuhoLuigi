@@ -1,13 +1,26 @@
 .base1{
-	background-image: url(../img/patron-naranja.png);
+	background-image: url(../img/patron-naranja-2.png);
 	background-repeat: repeat;
-	height: 260px;
+	width: 100%;
+	height: auto;
 	color: white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	box-sizing: border-box;
 }
 
 .base2{
 	background-color: rgb(49, 38, 29);
 	height: auto;
 	color: white;
+	width: 100%;
+	height: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	box-sizing: border-box;
 
+}
+.col-center{
+    float: none;
+    margin: 0 auto;
 }

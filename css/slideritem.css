@@ -2,9 +2,10 @@
 .back_slider{
 	width: 100%;
 	max-width: 2500px;
-	height: 100vh;
 	margin: 0;
-	padding: 0;
+	height: auto;
+	padding: 70px;
+	color: #fff;
 	/*top: 0;
 	left: 0;
 	position: absolute;*/
@@ -38,7 +39,6 @@
 	top: 0;
 	left: 0;
 	position: relative;
-	background-position: 1.4s ease-in-out 0.3s;
 	z-index:1;
 }
 
@@ -61,18 +61,21 @@
  .text-title{
 
  	color: white;
-	padding-bottom: 30px;
+	padding: 0px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
  }
 
 .carousel_img{
-	margin-left: 150px;
-	margin-top: 10px;
-	width: 440px;
+	margin-left: 250px;
+	margin-top: 35px;
+	width: 60%;
 	height: auto;
 	vertical-align: middle;
 	border: 7px solid #10069F;
 	border-radius: 10px;
 	background-color: white;
+	box-sizing: border-box;
 }
 
 .carousel-control.right, .carousel-control.left {
