@@ -1,0 +1,13 @@
+.base1{
+	background-image: url(../img/patron-naranja.png);
+	background-repeat: repeat;
+	height: 260px;
+	color: white;
+}
+
+.base2{
+	background-color: rgb(49, 38, 29);
+	height: auto;
+	color: white;
+
+}

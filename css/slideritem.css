@@ -107,20 +107,3 @@
 	margin-top: 50%;
 
 }
-
-.base1{
-	background-image: url(../img/patron-naranja.png);
-	background-repeat: repeat;
-	height: 260px;
-	color: white;
-}
-.base1:after {
-	background-color: rgba(255, 96, 55, 0.95);
-}
-
-.base2{
-	background-color: rgb(49, 38, 29);
-	height: auto;
-	color: white;
-
-}

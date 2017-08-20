@@ -1,0 +1,55 @@
+body{
+	position: absolute;
+}
+.productpage{
+	background-image: url(../img/patron-multicolor.png);
+	background-repeat: repeat;
+}
+.selector-for-some-widget {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+
+.base1{
+	background-image: url(../img/patron-naranja-2.png);
+	background-repeat: repeat;
+	height: 200px;
+	color: white;
+}
+.base2{
+	background-color: rgb(49, 38, 29);
+	height: 70px;
+	color: white;
+
+}
+.products{
+
+}
+.pcard{
+	background-color: white;
+	border: 5px solid blue;
+	border-radius: 10px;
+	width: 250px;
+	height: 200px;
+	margin: 20px;
+	overflow: hidden;
+}
+
+.inside{
+	border-left: 5px solid blue;
+}
+.modal-content{
+	border: 5px solid blue;
+border-radius: 20px;
+width: 1000px;
+	align-items: center;
+}
+
+.carousel-indicators li {
+      border-color: blue;
+  }
+  .carousel-indicators li.active {
+      background-color: blue;
+  }
