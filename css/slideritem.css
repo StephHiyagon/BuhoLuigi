@@ -16,6 +16,9 @@
 
 .carousel-img{
 	margin:auto;
+	width: 15%;
+  position: relative;
+  top: -4.2rem;
 }
 
 /*.back_slider::after{

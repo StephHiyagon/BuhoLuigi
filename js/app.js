@@ -49,7 +49,7 @@ function moveScroll(event){
     portada();
   }
 
-  if(scroll>636){
+  if(scroll>=636){
     $('.navbar').fadeIn('slow');
     console.log(item[0]);
     item[0].style.color="red";
@@ -62,10 +62,14 @@ function moveScroll(event){
     item[1].style.color="blue";
     console.log(item[1]);
   }
-  
-  if(scroll>2036){
+
+  if(scroll>=2036){
     item[1].style.color="gray";
     item[2].style.color="yellow";
+  }
+
+  if(scroll<636){
+    $('.navbar').fadeOut('slow');
   }
 
 }
