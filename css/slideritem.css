@@ -21,6 +21,20 @@
   top: -4.2rem;
 }
 
+.barra-separte{
+	margin:auto;
+	width: 16%;
+  position: relative;
+  top: -1.2rem;
+}
+
+.barra-encuentranos{
+	margin:auto;
+	width: 32%;
+  position: relative;
+  top: -1.2rem;
+}
+
 /*.back_slider::after{
 	content:'';
 	position: relative;
