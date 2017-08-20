@@ -6,7 +6,7 @@
 }
 
 #nav{
-  height:10vh;
+  height:7vh;
 }
 
 .navbar-header{
@@ -14,8 +14,10 @@
 }
 
 .navbar-brand>img{
-  width: 9%;
+  width: 40%;
   display: inline-block;
+  position: relative;
+  top: -11px;
 }
 
 .brand-img{
