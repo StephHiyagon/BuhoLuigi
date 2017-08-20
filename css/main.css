@@ -53,8 +53,8 @@
 
 .img-cambia {
   position: relative;
-  height: 290px;
-  width: 290px;
+  height: 380px;
+  width: 380px;
   margin: 50px auto;
 }
 
@@ -79,7 +79,12 @@
 .nubes{
   position: relative;
   top: 7rem;
-  left: -30rem;
+  left: -28rem;
+}
+
+.coo{
+  position: relative;
+  left: -2rem;
 }
 
 /*video*/

@@ -12,27 +12,41 @@ var span = document.getElementById("close");
 var modal = document.getElementById('myModal');
 var body=document.getElementsByTagName('body')[0];
 
+var boton1=document.getElementsByClassName('js-iconos')[0];
+var buho=document.getElementsByClassName('img-cambia')[0];
+var text=document.getElementsByClassName('textPrinc')[0];
+var text1=document.getElementsByClassName('text')[0];
+var item=document.getElementsByClassName('nav-item');
 //funciones
-
-function moveScroll(event){
-  var scroll=window.pageYOffset || document.body.scrollTop;
-  console.log(scroll);
-  var boton1=document.getElementsByClassName('js-iconos')[0];
-  var buho=document.getElementsByClassName('img-cambia')[0];
-  var text=document.getElementsByClassName('textPrinc')[0];
-  var text1=document.getElementsByClassName('text')[0];
-  var item=document.getElementsByClassName('nav-item');
-  if(scroll>=10){
+function portada(){
+  setTimeout(function(){
     boton1.style.display="block";
     buho.classList.add('flex1');
     text.classList.add('flex');
     text1.style.display="none";
+    $('.nubes').show();
     $('.coo').fadeIn('slow');
     setTimeout(function(){
       $('.abs').fadeIn('slow');
-    },1000);
-  }else{
+    },2000);
+  }, 2000);
+}
+
+portada();
+
+
+function moveScroll(event){
+  var scroll=window.pageYOffset || document.body.scrollTop;
+  console.log(scroll);
+
+  if(scroll<1){
     $('.msj').hide();
+    $('.nubes').hide();
+    boton1.style.display="none";
+    buho.classList.remove('flex1');
+    text.classList.remove('flex');
+    text1.style.display="inline-block";
+    portada();
   }
 
   if(scroll>636){
