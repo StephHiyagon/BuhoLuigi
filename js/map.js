@@ -1,3 +1,57 @@
+var select = document.getElementById('depa');
+var lat, lng;
+select.addEventListener("change", function(){
+  console.log(select.value);
+  switch (select.value) {
+    case "lima":
+      lat=-12.126207;
+      lng=-77.018198;
+      title="Tai Loy Schell-Miraflores";
+      break;
+
+    case "trujillo":
+      lat=-8.109368;
+      lng=-79.024051;
+      title="Tai Loy Bolivar-Trujillo";
+      break;
+    }
+    buscame(lat,lng,title);
+  });
+
+  let map;
+
+  function buscame(lat,long,titulo) {
+  console.log(lat+"|"+long+"|"+ titulo);
+    function success(pos) {
+      var crd = pos.coords;
+      console.log(crd);
+      const marker = new google.maps.Marker({
+        position: {lat:lat , lng: long },
+        animation: google.maps.Animation.DROP,
+        map: map,
+        icon: 'assets/images/favicon.png',
+        title: titulo
+      });
+
+      map.setZoom(15);
+      map.setCenter({lat:lat , lng: long });
+      // const marker1 = new google.maps.Marker({
+      //   position: {lat:crd.latitude , lng: crd.longitude },
+      //   map: map,
+      //   icon: 'assets/images/favicon.png'
+      // });
+    };
+
+    function error(err) {
+      console.warn('ERROR(' + err.code + '): ' + err.message);
+    };
+
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+
+
+
+
 google.maps.event.addDomListener(window, 'load', init);
 
 function init() {
@@ -204,14 +258,14 @@ function init() {
     var mapElement = document.getElementById('map');
 
     // Create the Google Map using our element and options defined above
-    var map = new google.maps.Map(mapElement, mapOptions);
+    map = new google.maps.Map(mapElement, mapOptions);
 
     // Let's also add a marker while we're at it
-    var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(-12.077222222222, -77.092777777778),
-        map: map,
-        title: 'El Búho Luigi',
-        icon: 'assets/images/favicon.png'
-
-    });
+    // var marker = new google.maps.Marker({
+    //     position: new google.maps.LatLng(-12.077222222222, -77.092777777778),
+    //     map: map,
+    //     title: 'El Búho Luigi',
+    //     // icon: 'assets/images/favicon.png'
+    //
+    // });
 };
