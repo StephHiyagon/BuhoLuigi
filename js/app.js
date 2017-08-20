@@ -24,11 +24,10 @@ function portada(){
     buho.classList.add('flex1');
     text.classList.add('flex');
     text1.style.display="none";
-    $('.nubes').show();
     $('.coo').fadeIn('slow');
     setTimeout(function(){
       $('.abs').fadeIn('slow');
-    },2000);
+    },1500);
   }, 2000);
 }
 
@@ -41,7 +40,8 @@ function moveScroll(event){
 
   if(scroll<1){
     $('.msj').hide();
-    $('.nubes').hide();
+    $('.coo').hide();
+    $('.abs').hide();
     boton1.style.display="none";
     buho.classList.remove('flex1');
     text.classList.remove('flex');
@@ -111,7 +111,7 @@ function cerrar (event){
 
 $('.js-iconos a').on("click", function(e) {
    e.preventDefault();
-    var target ='#'+ $(this).attr("role-link");  
+    var target ='#'+ $(this).attr("role-link");
     $('html,body').animate({scrollTop: $(target).offset().top},1200);
     return false;
    });
