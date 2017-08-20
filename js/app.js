@@ -53,30 +53,21 @@ function moveScroll(event){
     $('.navbar').fadeIn('slow');
     console.log(item[0]);
     item[0].style.color="red";
-    item[1].style.color="black";
-  }else{
-    $('.navbar').fadeOut('slow');
-    item[0].style.color="black";
-    item[1].style.color="black";
+    item[1].style.color="gray";
+    item[2].style.color="gray";
   }
 
   if(scroll>=1348){
-    item[0].style.color="black";
-    // item[1].style.color="blue";
+    item[0].style.color="gray";
+    item[1].style.color="blue";
     console.log(item[1]);
-  }else if(scroll<1348){
-    console.log(item[1]);
-    item[0].style.color="red";
-    item[1].style.color="black";
+  }
+  
+  if(scroll>2036){
+    item[1].style.color="gray";
+    item[2].style.color="yellow";
   }
 
-  if(scroll>2036){
-    item[1].style.color="black";
-    item[2].style.color="yellow";
-  }else{
-    item[1].style.color="blue";
-    item[2].style.color="black";
-  }
 }
 
 $('.abs').on('click', function(){
