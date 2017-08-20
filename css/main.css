@@ -89,6 +89,14 @@
   left: -2rem;
 }
 
+#map{
+  height: 60vh;
+}
+
+/*.mapa{
+  margin-right: 0;
+}*/
+
 /*video*/
 
 .video-bg iframe {

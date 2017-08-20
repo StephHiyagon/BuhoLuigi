@@ -111,12 +111,17 @@ function cerrar (event){
 
 $('.js-iconos a').on("click", function(e) {
    e.preventDefault();
-    // console.log("desplaza");
-    // console.log(e.target);
-    var target ='#'+ $(this).attr("role-link");
-    console.log(target);
+    var target ='#'+ $(this).attr("role-link");  
     $('html,body').animate({scrollTop: $(target).offset().top},1200);
     return false;
+   });
+
+ $('header li').on("click", function(e) {
+   e.preventDefault();
+    var target ='#'+ $(e.target).attr("role-data");
+    $('html,body').animate({scrollTop: $(target).offset().top}, 1200);
+    return false;
+
    });
 
 //llamada de eventos
