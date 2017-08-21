@@ -17,7 +17,17 @@ var buho=document.getElementsByClassName('img-cambia')[0];
 var text=document.getElementsByClassName('textPrinc')[0];
 var text1=document.getElementsByClassName('text')[0];
 var item=document.getElementsByClassName('nav-item');
+var redirec=document.getElementsByClassName('boton-intro');
 //funciones
+function products(){
+  window.location.href = "./products.html";
+}
+
+for(var i=0; i<redirec.length;i++){
+  redirec[i].addEventListener('click', products);
+}
+
+
 function portada(){
   setTimeout(function(){
     boton1.style.display="block";
@@ -123,6 +133,8 @@ $('.js-iconos a').on("click", function(e) {
     return false;
 
    });
+
+
 
 //llamada de eventos
 window.addEventListener('scroll',moveScroll);

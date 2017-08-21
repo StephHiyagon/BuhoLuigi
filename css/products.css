@@ -1,6 +1,4 @@
-body{
-	position: absolute;
-}
+
 .productpage{
 	background-image: url(../img/patron-multicolor.png);
 	background-repeat: repeat;
@@ -10,23 +8,7 @@ body{
      -moz-box-sizing: content-box;
           box-sizing: content-box;
 }
-
-
-.base1{
-	background-image: url(../img/patron-naranja-2.png);
-	background-repeat: repeat;
-	height: 200px;
-	color: white;
-}
-.base2{
-	background-color: rgb(49, 38, 29);
-	height: 70px;
-	color: white;
-
-}
-.products{
-
-}
+¿
 .pcard{
 	background-color: white;
 	border: 5px solid blue;
@@ -53,3 +35,8 @@ width: 1000px;
   .carousel-indicators li.active {
       background-color: blue;
   }
+
+.products{
+   float: none;
+    margin: 0 auto;
+}

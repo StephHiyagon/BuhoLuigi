@@ -38,13 +38,11 @@ h2{
 h3{
 	font-size:70px;
 }
-
 h4{
 	font-size:45px;
 }
-
 .wrapper_separte{
-	background-image: url('../assets/images/patron-azul.png');
+	background-image: url('../images/bg_blue.png');
 	background-repeat: repeat-x repeat-y;
 	height: auto;
 	padding: 70px;
@@ -120,7 +118,7 @@ h4{
 	border:2px solid #FFD100;
 }
 .wrapper_encuentranos{
-	background-image: url('../assets/images/patron-amarillo.png');
+	background-image: url('../images/bg_yellow.png');
 	background-repeat: repeat-x repeat-y;
 	height: auto;
 	padding: 100px 70px 100px 70px;
