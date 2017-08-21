@@ -1,18 +1,13 @@
 
 .back_slider{
 	width: 100%;
-	max-width: 2500px;
 	margin: 0;
 	height: 100vh;
 	padding: 70px;
 	color: #fff;
-	/*top: 0;
-	left: 0;
-	position: absolute;*/
-	background-position: 1.4s ease-in-out 0.3s;
 	background-image:url(../img/patron-rojo.png);
   background-repeat:repeat;
-	/*z-index: 0;*/
+    position: static !important;
 }
 
 .barbar{
@@ -114,5 +109,10 @@
 
 .cursor{
 	margin-top: 50%;
+
+}
+
+.posi {
+    position: static !important;
 
 }
