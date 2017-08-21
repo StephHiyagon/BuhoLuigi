@@ -11,6 +11,7 @@ var play=document.getElementsByClassName('img-cambia')[0];
 var span = document.getElementById("close");
 var modal = document.getElementById('myModal');
 var body=document.getElementsByTagName('body')[0];
+var v = document.getElementsByTagName("video")[0];
 
 var boton1=document.getElementsByClassName('js-iconos')[0];
 var buho=document.getElementsByClassName('img-cambia')[0];
@@ -53,16 +54,16 @@ function moveScroll(event){
   var scroll=window.pageYOffset || document.body.scrollTop;
   console.log(scroll);
 
-  if(scroll<1){
-    $('.msj').hide();
-    $('.coo').hide();
-    $('.abs').hide();
-    boton1.style.display="none";
-    buho.classList.remove('flex1');
-    text.classList.remove('flex');
-    text1.style.display="inline-block";
-    portada();
-  }
+  // if(scroll<1){
+  //   $('.msj').hide();
+  //   $('.coo').hide();
+  //   $('.abs').hide();
+  //   boton1.style.display="none";
+  //   buho.classList.remove('flex1');
+  //   text.classList.remove('flex');
+  //   text1.style.display="inline-block";
+  //   portada();
+  // }
 
   if(scroll>=636){
     $('.navbar').fadeIn('slow');
@@ -72,13 +73,13 @@ function moveScroll(event){
     item[2].style.color="gray";
   }
 
-  if(scroll>=1348){
+  if(scroll>=1275){
     item[0].style.color="gray";
     item[1].style.color="blue";
     console.log(item[1]);
   }
 
-  if(scroll>=2036){
+  if(scroll>=2022){
     item[1].style.color="gray";
     item[2].style.color="yellow";
   }
@@ -114,6 +115,8 @@ play.addEventListener('click',function (e){
     console.log('entre');
     var modalImg = document.getElementById("img01");
     modal.style.display="block";
+    v.play();
+    v.volume=0.1;
     body.style.overflow="hidden";
   }
 });
@@ -122,6 +125,8 @@ function cerrar (event){
   event.preventDefault();
     modal.style.display="none";
     body.style.overflow="auto";
+    v.pause();
+    v.currentTime =0;
   }
 
 $('.js-iconos a').on("click", function(e) {

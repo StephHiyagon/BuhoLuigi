@@ -89,14 +89,6 @@
   left: -2rem;
 }
 
-#map{
-  height: 55vh;
-}
-
-/*.mapa{
-  margin-right: 0;
-}*/
-
 /*video*/
 
 .video-bg iframe {
@@ -135,7 +127,7 @@ header::after{
   left: 0;
   top: 0;
   width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  height: auto; /* Full height */
   background-color:rgba(255, 96, 55, 0.875); /* Black w/ opacity */
 }
 
@@ -144,7 +136,7 @@ header::after{
   margin: auto;
   display: block;
   width: 100%;
-  height:100vh;
+  height:auto;
   border:12px solid white;
   z-index: 100;
 }
@@ -191,4 +183,18 @@ header::after{
   .modal-content {
       width: 100%;
     }
+}
+
+/*mapa*/
+
+#map{
+  height: 55vh;
+}
+
+.red-map{
+  color:red;
+}
+
+.blue-map{
+  color:blue;
 }

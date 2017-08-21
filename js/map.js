@@ -7,20 +7,37 @@ select.addEventListener("change", function(){
       lat=-12.126207;
       lng=-77.018198;
       title="Tai Loy Schell-Miraflores";
+      time="Lun - Sáb/ 9 -21 horas";
+      address="Calle Schell 241, Miraflores";
       break;
 
     case "trujillo":
       lat=-8.109368;
       lng=-79.024051;
       title="Tai Loy Bolivar-Trujillo";
+      time="Lun - Vie/ 9 -20 horas";
+      address="Jirón Bolivar 794, Trujillo";
       break;
     }
-    buscame(lat,lng,title);
+    buscame(lat,lng,title,time, address);
   });
 
   let map;
 
-  function buscame(lat,long,titulo) {
+  function buscame(lat,long,titulo, horario, direc) {
+    var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading red-map">'+titulo+'</h1>'+
+      '<div id="bodyContent">'+
+      '<p class="blue-map"><b>Dirección:</b> '+direc+'.</p>'+
+      '<p class="blue-map">Horario de Atención:'+ horario +'</p>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
   console.log(lat+"|"+long+"|"+ titulo);
     function success(pos) {
       var crd = pos.coords;
@@ -35,6 +52,10 @@ select.addEventListener("change", function(){
 
       map.setZoom(15);
       map.setCenter({lat:lat , lng: long });
+
+      // marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      // });
       // const marker1 = new google.maps.Marker({
       //   position: {lat:crd.latitude , lng: crd.longitude },
       //   map: map,
@@ -62,195 +83,195 @@ function init() {
         scrollwheel: false, //set to true to enable mouse scrolling while inside the map area
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(-12.077222222222, -77.092777777778), // Lima
+        center: new google.maps.LatLng(-12.0858616, -77.00007849999997), // San Borja,Lima
 
         // How you would like to style the map.
         // This is where you would paste any style found on Snazzy Maps.
-        styles: [
-        {
-            "featureType": "water",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "color": "#d3d3d3"
-                }
-            ]
-        },
-        {
-            "featureType": "transit",
-            "stylers": [
-                {
-                    "color": "#808080"
-                },
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "road.highway",
-            "elementType": "geometry.stroke",
-            "stylers": [
-                {
-                    "visibility": "on"
-                },
-                {
-                    "color": "#b3b3b3"
-                }
-            ]
-        },
-        {
-            "featureType": "road.highway",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "color": "#ffffff"
-                }
-            ]
-        },
-        {
-            "featureType": "road.local",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "visibility": "on"
-                },
-                {
-                    "color": "#ffffff"
-                },
-                {
-                    "weight": 1.8
-                }
-            ]
-        },
-        {
-            "featureType": "road.local",
-            "elementType": "geometry.stroke",
-            "stylers": [
-                {
-                    "color": "#d7d7d7"
-                }
-            ]
-        },
-        {
-            "featureType": "poi",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "visibility": "on"
-                },
-                {
-                    "color": "#ebebeb"
-                }
-            ]
-        },
-        {
-            "featureType": "administrative",
-            "elementType": "geometry",
-            "stylers": [
-                {
-                    "color": "#a7a7a7"
-                }
-            ]
-        },
-        {
-            "featureType": "road.arterial",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "color": "#ffffff"
-                }
-            ]
-        },
-        {
-            "featureType": "road.arterial",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "color": "#ffffff"
-                }
-            ]
-        },
-        {
-            "featureType": "landscape",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "visibility": "on"
-                },
-                {
-                    "color": "#efefef"
-                }
-            ]
-        },
-        {
-            "featureType": "road",
-            "elementType": "labels.text.fill",
-            "stylers": [
-                {
-                    "color": "#696969"
-                }
-            ]
-        },
-        {
-            "featureType": "administrative",
-            "elementType": "labels.text.fill",
-            "stylers": [
-                {
-                    "visibility": "on"
-                },
-                {
-                    "color": "#737373"
-                }
-            ]
-        },
-        {
-            "featureType": "poi",
-            "elementType": "labels.icon",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "poi",
-            "elementType": "labels",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "road.arterial",
-            "elementType": "geometry.stroke",
-            "stylers": [
-                {
-                    "color": "#d6d6d6"
-                }
-            ]
-        },
-        {
-            "featureType": "road",
-            "elementType": "labels.icon",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {},
-        {
-            "featureType": "poi",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "color": "#dadada"
-                }
-            ]
-        }
-        ]
+        // styles: [
+        // {
+        //     "featureType": "water",
+        //     "elementType": "geometry.fill",
+        //     "stylers": [
+        //         {
+        //             "color": "#d3d3d3"
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "transit",
+        //     "stylers": [
+        //         {
+        //             "color": "#808080"
+        //         },
+        //         {
+        //             "visibility": "off"
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "road.highway",
+        //     "elementType": "geometry.stroke",
+        //     "stylers": [
+        //         {
+        //             "visibility": "on"
+        //         },
+        //         {
+        //             "color": "#b3b3b3"
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "road.highway",
+        //     "elementType": "geometry.fill",
+        //     "stylers": [
+        //         {
+        //             "color": "#ffffff"
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "road.local",
+        //     "elementType": "geometry.fill",
+        //     "stylers": [
+        //         {
+        //             "visibility": "on"
+        //         },
+        //         {
+        //             "color": "#ffffff"
+        //         },
+        //         {
+        //             "weight": 1.8
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "road.local",
+        //     "elementType": "geometry.stroke",
+        //     "stylers": [
+        //         {
+        //             "color": "#d7d7d7"
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "poi",
+        //     "elementType": "geometry.fill",
+        //     "stylers": [
+        //         {
+        //             "visibility": "on"
+        //         },
+        //         {
+        //             "color": "#ebebeb"
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "administrative",
+        //     "elementType": "geometry",
+        //     "stylers": [
+        //         {
+        //             "color": "#a7a7a7"
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "road.arterial",
+        //     "elementType": "geometry.fill",
+        //     "stylers": [
+        //         {
+        //             "color": "#ffffff"
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "road.arterial",
+        //     "elementType": "geometry.fill",
+        //     "stylers": [
+        //         {
+        //             "color": "#ffffff"
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "landscape",
+        //     "elementType": "geometry.fill",
+        //     "stylers": [
+        //         {
+        //             "visibility": "on"
+        //         },
+        //         {
+        //             "color": "#efefef"
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "road",
+        //     "elementType": "labels.text.fill",
+        //     "stylers": [
+        //         {
+        //             "color": "#696969"
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "administrative",
+        //     "elementType": "labels.text.fill",
+        //     "stylers": [
+        //         {
+        //             "visibility": "on"
+        //         },
+        //         {
+        //             "color": "#737373"
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "poi",
+        //     "elementType": "labels.icon",
+        //     "stylers": [
+        //         {
+        //             "visibility": "off"
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "poi",
+        //     "elementType": "labels",
+        //     "stylers": [
+        //         {
+        //             "visibility": "off"
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "road.arterial",
+        //     "elementType": "geometry.stroke",
+        //     "stylers": [
+        //         {
+        //             "color": "#d6d6d6"
+        //         }
+        //     ]
+        // },
+        // {
+        //     "featureType": "road",
+        //     "elementType": "labels.icon",
+        //     "stylers": [
+        //         {
+        //             "visibility": "off"
+        //         }
+        //     ]
+        // },
+        // {},
+        // {
+        //     "featureType": "poi",
+        //     "elementType": "geometry.fill",
+        //     "stylers": [
+        //         {
+        //             "color": "#dadada"
+        //         }
+        //     ]
+        // }
+        // ]
     };
 
     // Get the HTML DOM element that will contain your map
