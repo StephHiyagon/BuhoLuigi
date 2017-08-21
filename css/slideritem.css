@@ -1,13 +1,18 @@
 
 .back_slider{
 	width: 100%;
+	max-width: 2500px;
 	margin: 0;
 	height: 100vh;
 	padding: 70px;
 	color: #fff;
+	/*top: 0;
+	left: 0;
+	position: absolute;*/
+	background-position: 1.4s ease-in-out 0.3s;
 	background-image:url(../img/patron-rojo.png);
   background-repeat:repeat;
-    position: static !important;
+	/*z-index: 0;*/
 }
 
 .barbar{
@@ -82,12 +87,17 @@
 .carousel-control.right, .carousel-control.left {
 		background-image: none;
 		color: #fff;
+		margin-top: 130px;
 }
 .carousel-indicators li {
 		border-color: #fff;
 }
 .carousel-indicators li.active {
 		background-color: #fff;
+}
+
+.pro{
+	margin-top:7%;
 }
 
 .boton-intro{
@@ -109,10 +119,13 @@
 
 .cursor{
 	margin-top: 50%;
-
 }
 
-.posi {
-    position: static !important;
-
+@media only screen and (max-width: 1200px){
+  .back_slider {
+    margin-top: 75px;
+    }
+	.carousel_img{
+		margin-top: 58px;
+	}
 }

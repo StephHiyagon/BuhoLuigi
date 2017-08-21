@@ -61,12 +61,16 @@ h4{
 	padding: 30px 50px 30px 50px;
 }
 .subtitle_section{
+	font-size: 75px;
 	color: #fff;
 	font-family: 'Moon Flower Bold';
+	font-weight: bold;
 }
 .subtitle_yellow{
 	color: #FFD100;
+	font-size: 70px;
 	font-family: 'Moon Flower Bold';
+	font-weight: bold;
 	padding:20px 0px;
 	margin-right: 34px;
 }
@@ -116,13 +120,13 @@ h4{
 .wrapper_encuentranos{
 	background-image: url('../images/bg_yellow.png');
 	background-repeat: repeat-x repeat-y;
-    width: 100%;
-	height: 100vh;
+	height: auto;
 	padding: 100px 70px 100px 70px;
 	color: #fff;
 }
-.subtitle_orange{
-	color: rgb(255, 96, 55);
+.subtitle_red{
+	font-size: 75px;
+	color: #EE2737;
 	font-family: 'Moon Flower Bold';
 }
 .content_form_google{

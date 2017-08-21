@@ -188,8 +188,7 @@ header::after{
 /*mapa*/
 
 #map{
-    width: 150%;
-  height: 100vh;
+  height: 55vh;
 }
 
 .red-map{
