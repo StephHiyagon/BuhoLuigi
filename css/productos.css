@@ -14,10 +14,23 @@
 	background-color: white;
 	border: 5px solid blue;
 	border-radius: 10px;
-	width: 250px;
-	height: 200px;
-	margin: 20px;
+	margin: 4.1%;
 	overflow: hidden;
+}
+
+.red{
+	color:red;
+	margin-top: 100px;
+}
+
+.barra-product-roja{
+	width: 12%;
+  margin: auto;
+}
+
+.modal-dialog {
+  width: 993px;
+  margin: 130px auto;
 }
 
 .inside{
@@ -39,4 +52,24 @@ width: 1000px;
 
 .point{
 	cursor: pointer;
+}
+
+/*navbar*/
+#nav{
+  height:7vh;
+}
+
+.navbar-header{
+  width:50%;
+}
+
+.navbar-brand>img{
+  width: 40%;
+  display: inline-block;
+  position: relative;
+  top: -11px;
+}
+
+.brand-img{
+  width:20%;
 }
