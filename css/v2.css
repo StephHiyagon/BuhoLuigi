@@ -178,3 +178,14 @@
 	font-family: 'GothamBookRegular';
 	color: #10069F;
 }
+.content_detail_blog{
+	text-align: center;
+}
+.content_detail_blog p{
+	margin:50px 0px;
+	padding:0px 50px;
+	text-align: justify;
+	font-size: 18px;
+	font-family: 'GothamBookRegular';
+	color: #10069F;
+}
