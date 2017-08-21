@@ -18,6 +18,7 @@ var text=document.getElementsByClassName('textPrinc')[0];
 var text1=document.getElementsByClassName('text')[0];
 var item=document.getElementsByClassName('nav-item');
 var redirec=document.getElementsByClassName('boton-intro');
+var blog=document.getElementById('btn_login');
 //funciones
 function products(){
   window.location.href = "./products.html";
@@ -26,6 +27,10 @@ function products(){
 for(var i=0; i<redirec.length;i++){
   redirec[i].addEventListener('click', products);
 }
+
+blog.addEventListener('click', function(){
+  window.location.href = "./blog.html";
+})
 
 
 function portada(){
