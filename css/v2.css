@@ -33,6 +33,7 @@ h1,h2,h3,h4,h5,h6{
 
 h2{
 	font-size:75px;
+	font-size:4.68em;
 }
 
 h3{
@@ -63,6 +64,7 @@ h4{
 }
 .subtitle_section{
 	font-size: 75px;
+	font-size:4.68em;
 	color: #fff;
 	font-family: 'Moon Flower Bold';
 	font-weight: bold;
@@ -70,6 +72,7 @@ h4{
 .subtitle_yellow{
 	color: #FFD100;
 	font-size: 70px;
+	font-size: 4.35em;
 	font-family: 'Moon Flower Bold';
 	font-weight: bold;
 	padding:20px 0px;
@@ -78,6 +81,7 @@ h4{
 .text-intro{
 	font-family: 'GothamBookRegular';
 	font-size: 23px;
+	font-size:1.44em;
 	color: #fff;
 	padding-top: 25px;
 	/*padding-bottom: 15px;*/
