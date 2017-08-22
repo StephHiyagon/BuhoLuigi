@@ -46,7 +46,7 @@ h4{
 .wrapper_separte{
 	background-image: url('../images/bg_blue.png');
 	background-repeat: repeat-x repeat-y;
-	height: 100vh;
+	height: auto;
 	padding: 70px;
 	color: #fff;
 }
