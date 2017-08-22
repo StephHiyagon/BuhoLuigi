@@ -2,7 +2,10 @@
   padding: 0;
   margin:0;
   box-sizing: border-box;
+}
 
+header{
+  height:100vh;
 }
 
 #nav{
@@ -187,8 +190,17 @@ header::after{
 
 /*mapa*/
 
+.mapa{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #map{
-  height: 55vh;
+  height: 99vh;
+  top: -27px;
+  width: 48vw;
 }
 
 .red-map{

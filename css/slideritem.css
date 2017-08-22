@@ -6,9 +6,7 @@
 	height: 100vh;
 	padding: 70px;
 	color: #fff;
-	/*top: 0;
-	left: 0;
-	position: absolute;*/
+	position: relative;
 	background-position: 1.4s ease-in-out 0.3s;
 	background-image:url(../img/patron-rojo.png);
   background-repeat:repeat;

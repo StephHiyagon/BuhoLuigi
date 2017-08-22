@@ -44,7 +44,7 @@ h4{
 .wrapper_separte{
 	background-image: url('../images/bg_blue.png');
 	background-repeat: repeat-x repeat-y;
-	height: auto;
+	height: 100vh;
 	padding: 70px;
 	color: #fff;
 }
@@ -76,13 +76,24 @@ h4{
 }
 .text-intro{
 	font-family: 'GothamBookRegular';
-	font-size: 25px;
+	font-size: 23px;
 	color: #fff;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 25px;
+	/*padding-bottom: 15px;*/
 	padding-right: 30px;
 	border-right: 5px solid #f1f1f1;
+	margin-bottom: 0;
 }
+
+.text-post{
+	font-family: 'GothamBookRegular';
+  font-size: 23px;
+  color: #fff;
+  padding-right: 30px;
+	border-right: 5px solid #f1f1f1;
+	padding-bottom: 25px
+}
+
 .form_separte label{
 	font-size: 20px;
 	font-family: 'GothamBookRegular';
@@ -120,7 +131,7 @@ h4{
 .wrapper_encuentranos{
 	background-image: url('../images/bg_yellow.png');
 	background-repeat: repeat-x repeat-y;
-	height: auto;
+	height: 100vh;
 	padding: 100px 70px 100px 70px;
 	color: #fff;
 }

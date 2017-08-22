@@ -20,6 +20,11 @@
 	box-sizing: border-box;
 
 }
+
+.base2 p{
+	font-family: 'GothamBookRegular';
+}
+
 .col-center{
     float: none;
     margin: 0 auto;
