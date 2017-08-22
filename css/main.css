@@ -210,3 +210,15 @@ header::after{
 .blue-map{
   color:blue;
 }
+
+@media (max-width: 1200px){
+  .nubes{
+    left:-17rem;
+  }
+}
+
+@media (max-width: 768px){
+  .nubes{
+    left:-12rem;
+  }
+}
