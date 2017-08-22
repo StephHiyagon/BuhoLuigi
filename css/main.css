@@ -215,6 +215,10 @@ header::after{
   .nubes{
     left:-17rem;
   }
+  #map{
+    top:-106px;
+    width:100%;
+  }
 }
 
 @media (max-width: 768px){
