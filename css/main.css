@@ -190,16 +190,16 @@ header::after{
 
 /*mapa*/
 
-.mapa{
+/*.mapa{
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 #map{
   height: 99vh;
-  top: -27px;
+  top: -96px;
   width: 48vw;
 }
 
@@ -215,8 +215,7 @@ header::after{
   .nubes{
     left:-17rem;
   }
-  #map{
-    top:-44px;
+  #map{    
     width:100%;
   }
 }
